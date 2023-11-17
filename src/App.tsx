@@ -1,3 +1,4 @@
+import FooterSection from "./components/Footer/FooterSection";
 import FormComponent from "./components/Form/FormComponent";
 import HeaderComponent from "./components/Header/HeaderComponent";
 import HeaderContent from "./components/Header/HeaderContent";
@@ -21,6 +22,9 @@ const App = () => {
       </div>
       <div className="my-container">
         <RecentSection />
+      </div>
+      <div>
+        <FooterSection />
       </div>
     </div>
   );
