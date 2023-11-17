@@ -71,6 +71,12 @@ const StyledContent = styled.div`
       width: 100%;
     }
   }
+  @media (max-width: 400px) {
+    .header-text {
+      font-size: 40px;
+      line-height: unset;
+    }
+  }
 `;
 
 export default HeaderContent;

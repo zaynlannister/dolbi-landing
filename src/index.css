@@ -22,7 +22,7 @@ body {
   );
 }
 
-.container {
+.my-container {
   width: min(1180px, 100%);
   margin: 0 auto;
   padding: 0 20px;
