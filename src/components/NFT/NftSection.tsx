@@ -53,7 +53,7 @@ const NftSection = () => {
   };
 
   return (
-    <StyledNftSection data-aos="fade-right">
+    <StyledNftSection>
       <p className="text-[36px] font-[700] text-white/75 mb-8 nft-section__title">
         Features Artworks
       </p>
