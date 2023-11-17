@@ -27,3 +27,11 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.slick-next {
+  right: -10px !important;
+}
+
+.slick-prev {
+  left: -10px !important;
+}
