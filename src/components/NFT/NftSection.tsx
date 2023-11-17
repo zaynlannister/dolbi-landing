@@ -17,7 +17,7 @@ const NftSection = () => {
 
   const sliderSettings: Settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -28,8 +28,9 @@ const NftSection = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
+          infinite: false,
           dots: false,
+          initialSlide: 0,
         },
       },
       {
@@ -37,7 +38,7 @@ const NftSection = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          initialSlide: 0,
         },
       },
       {
@@ -45,14 +46,17 @@ const NftSection = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 0,
         },
       },
     ],
   };
 
   return (
-    <StyledNftSection>
-      <p className="text-[36px] font-[700] text-white/75">Features Artworks</p>
+    <StyledNftSection data-aos="fade-right">
+      <p className="text-[36px] font-[700] text-white/75 mb-8 nft-section__title">
+        Features Artworks
+      </p>
 
       <Slider {...sliderSettings}>
         {nfts.map((item: any, index: number) => (
@@ -63,6 +67,18 @@ const NftSection = () => {
   );
 };
 
-const StyledNftSection = styled.div``;
+const StyledNftSection = styled.div`
+  padding: 100px 0;
+
+  @media (max-width: 600px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 410px) {
+    .nft-section__title {
+      font-size: 30px;
+    }
+  }
+`;
 
 export default NftSection;

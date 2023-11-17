@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderContent = () => {
   return (
-    <StyledContent>
+    <StyledContent data-aos="fade-left">
       <div>
         <p className="text-[24px] font-[600] mb-2">Featured Film</p>
         <p className="text-[80px] w-[571px] leading-[80px] opacity-75 header-text">
@@ -57,7 +57,7 @@ const StyledContent = styled.div`
     }
   }
   @media (max-width: 610px) {
-    padding-bottom: 140px;
+    padding-bottom: 100px;
     &::after {
       width: 100%;
       height: 100%;

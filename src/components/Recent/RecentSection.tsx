@@ -22,10 +22,16 @@ const recentNft = [
 const RecentSection = () => {
   return (
     <StyledRecentSection>
-      <p className="text-[36px] font-[700] text-white/75 recent-title">
+      <p
+        data-aos="fade-down"
+        className="text-[36px] font-[700] text-white/75 recent-title"
+      >
         Recent Activity
       </p>
-      <div className="flex justify-between gap-12 mt-12 recent-content">
+      <div
+        data-aos="fade-right"
+        className="flex justify-between gap-12 mt-12 recent-content"
+      >
         {recentNft.map((item, index) => (
           <NftComponent key={index} {...item} />
         ))}

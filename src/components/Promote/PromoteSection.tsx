@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const PromoteSection = () => {
   return (
-    <StyledPromoteSection>
+    <StyledPromoteSection data-aos="fade-right">
       <div className="promote-container relative">
         <div className="promote-content">
           <p className="promote-text text-[48px] font-[700] text-white/[.75]">
