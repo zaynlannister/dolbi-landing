@@ -7,7 +7,7 @@ const NftSection = () => {
   const [nfts, setNfts] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("src/data/faker.json")
+    fetch("/faker.json")
       .then((res) => res.json())
       .then((res) => setNfts(res.nfts))
       .catch((error) => {
@@ -53,7 +53,7 @@ const NftSection = () => {
   };
 
   return (
-    <StyledNftSection>
+    <StyledNftSection data-aos="fade-right">
       <p className="text-[36px] font-[700] text-white/75 mb-8 nft-section__title">
         Features Artworks
       </p>
