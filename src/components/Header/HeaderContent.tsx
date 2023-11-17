@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderContent = () => {
   return (
-    <StyledContent data-aos="fade-left">
+    <StyledContent data-aos="fade-right">
       <div>
         <p className="text-[24px] font-[600] mb-2">Featured Film</p>
         <p className="text-[80px] w-[571px] leading-[80px] opacity-75 header-text">

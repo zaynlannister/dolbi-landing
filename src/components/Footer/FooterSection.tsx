@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterSection = () => {
   return (
-    <StyledFooter data-aos="fade-up">
+    <StyledFooter data-aos="fade-right">
       <div className="footer-container">
         <div>
           <p className="text-[28px] font-[700]">Join the community</p>

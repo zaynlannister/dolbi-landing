@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FormComponent = () => {
   return (
-    <StyledForm data-aos="fade-left">
+    <StyledForm data-aos="fade-right">
       <p className="text-[#FFFFFFBF] text-[48px] font-[700] form-title">
         Never Miss a drop!
       </p>

@@ -3,7 +3,7 @@ import dolby from "/assets/img/dolby.svg";
 
 const HeaderComponent = () => {
   return (
-    <StyledHeader data-aos="fade-down">
+    <StyledHeader data-aos="fade-right">
       <img src={dolby} alt="" />
     </StyledHeader>
   );
